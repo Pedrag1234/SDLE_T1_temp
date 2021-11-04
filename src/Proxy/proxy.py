@@ -24,7 +24,7 @@ class Proxy:
         try:
             self.xsub_socket.bind(self.xsub_connection)
         except:
-            print("PROXY : ERROR BINDING XSUB SOCKET TO CONNECTION")
+            print("PROXY : ERROR BINDING XSUB SOCKET TO CONNECTION. EXITING")
             sys.exit(-1)
 
         print("PROXY : STARTED XSUB SOCKET")
@@ -34,7 +34,7 @@ class Proxy:
         try:
             self.xpub_socket.bind(self.xpub_connection)
         except:
-            print("PROXY : ERROR BINDING XPUB SOCKET TO CONNECTION")
+            print("PROXY : ERROR BINDING XPUB SOCKET TO CONNECTION. EXITING")
             sys.exit(-1)
 
         print("PROXY : STARTED XSUB SOCKET")
